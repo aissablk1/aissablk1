@@ -1,0 +1,7 @@
+{
+  "name": "aissablk1",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": { "pulse": "node scripts/generate-pulse.mjs" }
+}
