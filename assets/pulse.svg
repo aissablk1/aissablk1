@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="150" viewBox="0 0 880 150" role="img" aria-label="Contributions sur 12 mois : 3 564. Derniers dépôts : regipy, xntfs, speckitlab.">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="150" viewBox="0 0 880 150" role="img" aria-label="Contributions sur 12 mois : 3 568. Derniers dépôts : xntfs, regipy, speckitlab.">
   <rect width="880" height="150" fill="#0A0A0A"/>
   <rect x="0.5" y="0.5" width="879" height="149" fill="none" stroke="#262626"/>
   <text x="40" y="32" font-family="monospace" font-size="11" letter-spacing="2" fill="#8A8A8A">CONTRIBUTIONS · 12 MOIS</text>
-  <text x="40" y="98" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" fill="#FAFAFA">3 564</text>
+  <text x="40" y="98" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="800" fill="#FAFAFA">3 568</text>
   <line x1="430.5" y1="24" x2="430.5" y2="112" stroke="#262626"/>
   <text x="470" y="32" font-family="monospace" font-size="11" letter-spacing="2" fill="#8A8A8A">DERNIERS DÉPÔTS</text>
-  <text x="470" y="56" font-family="monospace" font-size="13" fill="#FAFAFA">regipy</text>
-  <text x="840" y="56" text-anchor="end" font-family="monospace" font-size="11" fill="#8A8A8A">Python</text>
-  <text x="470" y="80" font-family="monospace" font-size="13" fill="#FAFAFA">xntfs</text>
-  <text x="840" y="80" text-anchor="end" font-family="monospace" font-size="11" fill="#8A8A8A">Swift</text>
+  <text x="470" y="56" font-family="monospace" font-size="13" fill="#FAFAFA">xntfs</text>
+  <text x="840" y="56" text-anchor="end" font-family="monospace" font-size="11" fill="#8A8A8A">Swift</text>
+  <text x="470" y="80" font-family="monospace" font-size="13" fill="#FAFAFA">regipy</text>
+  <text x="840" y="80" text-anchor="end" font-family="monospace" font-size="11" fill="#8A8A8A">Python</text>
   <text x="470" y="104" font-family="monospace" font-size="13" fill="#FAFAFA">speckitlab</text>
   <text x="840" y="104" text-anchor="end" font-family="monospace" font-size="11" fill="#8A8A8A">TypeScript</text>
   <line x1="40" y1="120.5" x2="840" y2="120.5" stroke="#262626"/>
-  <text x="40" y="140" font-family="monospace" font-size="10" fill="#8A8A8A">MàJ 04 octobre 2026</text>
+  <text x="40" y="140" font-family="monospace" font-size="10" fill="#8A8A8A">MàJ 05 octobre 2026</text>
 </svg>
