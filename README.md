@@ -1,16 +1,28 @@
-![Aïssa BELKOUSSA](assets/hero.svg)
+<picture>
+<source media="(max-width: 600px)" srcset="assets/m/hero.svg">
+<img src="assets/hero.svg" alt="Aïssa BELKOUSSA">
+</picture>
 
 `Autodidacte depuis mes 2 ans` · `Concepteur IA & full-stack créatif` · `De A à Z`
 
-![Mon histoire](assets/story.svg)
+<picture>
+<source media="(max-width: 600px)" srcset="assets/m/story.svg">
+<img src="assets/story.svg" alt="Mon histoire">
+</picture>
 
 ## Ce que je fais
 
-![Je construis des IA sur mesure, j'audite des architectures IA, je co-fonde une plateforme citoyenne](assets/doing.svg)
+<picture>
+<source media="(max-width: 600px)" srcset="assets/m/doing.svg">
+<img src="assets/doing.svg" alt="Je construis des IA sur mesure, j'audite des architectures IA, je co-fonde une plateforme citoyenne">
+</picture>
 
 ## De A à Z
 
-![De A à Z](assets/process.svg)
+<picture>
+<source media="(max-width: 600px)" srcset="assets/m/process.svg">
+<img src="assets/process.svg" alt="De A à Z">
+</picture>
 
 ## Le pipeline, en vrai
 
@@ -55,14 +67,20 @@ Je touche à tout, par curiosité autant que par plaisir. Pas de stack préfér�
 </p>
 
 <!-- PULSE:START -->
-![pulse](assets/pulse.svg)
+<picture>
+<source media="(max-width: 600px)" srcset="assets/m/pulse.svg">
+<img src="assets/pulse.svg" alt="Contributions et derniers dépôts">
+</picture>
 <!-- PULSE:END -->
 
 ![snake](https://raw.githubusercontent.com/aissablk1/aissablk1/output/snake.svg)
 
 ## Me parler
 
-![Me parler](assets/contact.svg)
+<picture>
+<source media="(max-width: 600px)" srcset="assets/m/contact.svg">
+<img src="assets/contact.svg" alt="Me parler">
+</picture>
 
 <p>
 <a href="https://www.aissabelkoussa.fr/contact"><img src="assets/contact/mail.svg" alt="Écrire : formulaire de contact"></a>
