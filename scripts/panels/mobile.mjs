@@ -94,7 +94,7 @@ const doing = panel("Ce que je fais : je construis, j'audite, je co-fonde.").kic
 [
   ["01", "Je construis", "Des IA sur mesure et du code qui rend du temps aux gens. Seul, de bout en bout."],
   ["02", "J'audite", "Des architectures IA pour d'autres. Challenger un système vaut autant que le bâtir."],
-  ["03", "Je co-fonde", "Une plateforme citoyenne, pour que ce que je code serve au-delà de moi."],
+  ["03", "Je co-fonde", "ParleCitoyen, une plateforme citoyenne, pour que ce que je code serve au-delà de moi."],
 ].forEach(([n, title, desc], i) => {
   if (i) doing.rule(20);
   doing.gap(8).mono([n], { size: 10, ls: 3, lh: 20 }).text(title, { size: 20, bold: true, color: INK, lh: 30 }).gap(2).text(desc, { lh: 19 });

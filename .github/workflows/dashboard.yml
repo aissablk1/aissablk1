@@ -21,6 +21,10 @@ jobs:
       - run: node scripts/generate-pulse.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # PR de aissablk1 mergées dans des projets tiers (authorAssociation externe uniquement).
+      - run: node scripts/generate-upstream.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Régénère les panneaux statiques : modifier un générateur dans scripts/panels/ suffit,
       # la CI reconstruit les SVG et le bloc explore du README puis committe.
       - run: node scripts/panels/index.mjs

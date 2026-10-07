@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="100" viewBox="0 0 360 100" role="img" aria-label="HuanchuanTech/xntfs : Show a copyable diskutil command when the sandbox denies an in-app mount (mergée le 5 oct. 2026)">
+  <rect width="360" height="100" fill="#0A0A0A"/>
+  <rect x="0.5" y="0.5" width="359" height="99" fill="none" stroke="#262626"/>
+  <text x="20" y="28" font-family="monospace" font-size="12" fill="#FAFAFA">HuanchuanTech/xntfs</text>
+  <text x="20" y="50" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#8A8A8A">Show a copyable diskutil command when the sandbox</text>
+  <text x="20" y="66" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#8A8A8A">denies an in-app mount</text>
+  <text x="20" y="86" font-family="monospace" font-size="9" fill="#8A8A8A">5 oct. 2026 · ★ 12 · Swift</text>
+</svg>

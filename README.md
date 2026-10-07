@@ -12,10 +12,11 @@
 
 ## Ce que je fais
 
-<picture>
-<source media="(max-width: 600px)" srcset="assets/m/doing.svg">
-<img src="assets/doing.svg" alt="Je construis des IA sur mesure, j'audite des architectures IA, je co-fonde une plateforme citoyenne">
-</picture>
+<!-- DOING:START -->
+<p>
+<picture><source media="(max-width: 600px)" srcset="assets/m/doing.svg"><img src="assets/doing.svg" width="100%" alt="Je construis des IA sur mesure, j'audite des architectures IA, je co-fonde ParleCitoyen, une plateforme citoyenne"></picture><a href="https://parlecitoyen.fr"><picture><source media="(max-width: 600px)" srcset="assets/m/cofonde.svg"><img src="assets/cofonde.svg" width="100%" alt="ParleCitoyen : la plateforme citoyenne que je co-fonde"></picture></a>
+</p>
+<!-- DOING:END -->
 
 ## De A à Z
 
@@ -49,6 +50,16 @@ Toujours pour la même raison : rendre du temps aux gens, et donner forme à ce 
 <a href="https://github.com/aissablk1/speckitlab"><picture><source media="(max-width: 600px)" srcset="assets/m/projects/speckitlab.svg"><img src="assets/projects/speckitlab.svg" width="50%" alt="speckitlab : Spec-Driven Development pour Claude Code."></picture></a><a href="https://github.com/aissablk1/cupel"><picture><source media="(max-width: 600px)" srcset="assets/m/projects/cupel.svg"><img src="assets/projects/cupel.svg" width="50%" alt="cupel : Audit local des skills d'agents IA."></picture></a><a href="https://github.com/aissablk1/communikey"><picture><source media="(max-width: 600px)" srcset="assets/m/projects/communikey.svg"><img src="assets/projects/communikey.svg" width="50%" alt="communikey : Bus de messages chiffré pour agents de code."></picture></a><picture><source media="(max-width: 600px)" srcset="assets/m/projects/prochain.svg"><img src="assets/projects/prochain.svg" width="50%" alt="Le prochain : En construction. Il sortira quand il sera prêt, pas avant."></picture>
 </p>
 <!-- PROJECTS:END -->
+
+### Mergé en amont
+
+Des correctifs acceptés par les mainteneurs de projets que je ne contrôle pas.
+
+<!-- UPSTREAM:START -->
+<p>
+<picture><source media="(max-width: 600px)" srcset="assets/m/upstream/head.svg"><img src="assets/upstream/head.svg" width="100%" alt="Mergé en amont : 2 pull requests acceptées dans des projets tiers."></picture><a href="https://github.com/HuanchuanTech/xntfs/pull/6"><picture><source media="(max-width: 600px)" srcset="assets/m/upstream/pr-1.svg"><img src="assets/upstream/pr-1.svg" width="100%" alt="HuanchuanTech/xntfs : Show a copyable diskutil command when the sandbox denies an in-app mount"></picture></a><a href="https://github.com/mkorman90/regipy/pull/347"><picture><source media="(max-width: 600px)" srcset="assets/m/upstream/pr-2.svg"><img src="assets/upstream/pr-2.svg" width="100%" alt="mkorman90/regipy : Fix shimcache parsing of NT5.2 (Windows 2003/Vista/2008) entries"></picture></a>
+</p>
+<!-- UPSTREAM:END -->
 
 ## Ce que j'explore
 

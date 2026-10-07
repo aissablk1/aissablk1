@@ -16,7 +16,7 @@ Dépôt de profil GitHub de **Aïssa BELKOUSSA** (`aissablk1/aissablk1`) : GitHu
 ## Structure
 
 ```
-README.md                      Page affichée par GitHub (blocs PULSE, PROJECTS, EXPLORE, CONTACT injectés par scripts)
+README.md                      Page affichée par GitHub (blocs DOING, PROJECTS, UPSTREAM, EXPLORE, PULSE, CONTACT injectés)
 assets/hero.svg, story.svg,    Grands panneaux desktop 880 px, ÉCRITS À LA MAIN
   process.svg
 assets/doing.svg, contact.svg  Grands panneaux desktop 880 px, GÉNÉRÉS
@@ -24,9 +24,12 @@ assets/explore/row-N.svg       Rangées « Ce que j'explore » 880 px (deux pann
 assets/projects/*.svg          Cartes projets, demi-grille 440 px, GÉNÉRÉES
 assets/contact/*.svg           Boutons de contact, demi-grille 440 × 64, GÉNÉRÉS
 assets/m/**                    Variantes mobiles de tout ce qui précède, GÉNÉRÉES
+assets/cofonde.svg             Lien ParleCitoyen sous « Ce que je fais », GÉNÉRÉ par doing.mjs
 assets/pulse.svg, m/pulse.svg  Statistiques GitHub, GÉNÉRÉES chaque jour par la CI
+assets/upstream/*.svg          « Mergé en amont » (PR acceptées dans des projets tiers), GÉNÉRÉES chaque jour par la CI
 scripts/panels/                Générateurs (un fichier par élément, jetons partagés dans tokens.mjs)
 scripts/generate-pulse.mjs     Générateur des statistiques (API GraphQL GitHub)
+scripts/generate-upstream.mjs  Générateur « Mergé en amont » (API GraphQL GitHub)
 .github/workflows/dashboard.yml  Pulse + panneaux, commit automatique
 .github/workflows/snake.yml      Serpent de contributions, publié sur la branche `output`
 ```
@@ -36,6 +39,7 @@ scripts/generate-pulse.mjs     Générateur des statistiques (API GraphQL GitHub
 ```bash
 npm run panels                 # régénère tous les SVG GÉNÉRÉS + les blocs PROJECTS, EXPLORE, CONTACT du README
 GITHUB_TOKEN=… npm run pulse   # régénère pulse.svg et m/pulse.svg
+GITHUB_TOKEN=… node scripts/generate-upstream.mjs   # régénère « Mergé en amont »
 ```
 
 Sans `GITHUB_TOKEN` valide, `pulse` écrit volontairement un état de repli (« — »). **Ne committe jamais ce repli** :
@@ -74,8 +78,11 @@ restaure `assets/pulse.svg` et `assets/m/pulse.svg`, la CI les régénère avec 
    - Marges intérieures : 40 (880), 24 (440), 20 (360), 12 (180).
 4. **Responsive** : tout passe par `<picture><source media="(max-width: 600px)" srcset="assets/m/…">`. Utilise les
    fonctions `cell()` et `rows()` de `tokens.mjs`, qui écrivent le bon balisage.
-5. **Marqueurs** : `PULSE`, `PROJECTS`, `EXPLORE`, `CONTACT` (`<!-- NOM:START -->` / `<!-- NOM:END -->`) présents
-   **une fois chacun**. Ne modifie pas leur contenu à la main : il est réécrit par les générateurs.
+5. **Marqueurs** : `DOING`, `PROJECTS`, `UPSTREAM`, `EXPLORE`, `PULSE`, `CONTACT` (`<!-- NOM:START -->` /
+   `<!-- NOM:END -->`) présents **une fois chacun**. Ne modifie pas leur contenu à la main : il est réécrit par les générateurs.
+8. **« Mergé en amont » = contributions externes uniquement.** Le filtre est l'`authorAssociation` donné par GitHub
+   (`CONTRIBUTOR`, `FIRST_TIME_CONTRIBUTOR`, `FIRST_TIMER`, `NONE`). N'ajoute jamais de PR vers les dépôts du propriétaire
+   ou de ses organisations (`OWNER`, `MEMBER`, `COLLABORATOR`), même pour gonfler la liste.
 6. **Texte** : tout texte doit tenir dans la marge. Le retour à la ligne des générateurs est une estimation :
    vérifie le rendu (voir ci-dessous).
 7. **Chaque élément cliquable** est un SVG séparé entouré de `<a href>` dans le README (un lien dans un SVG affiché via
@@ -86,7 +93,7 @@ restaure `assets/pulse.svg` et `assets/m/pulse.svg`, la CI les régénère avec 
 ```bash
 rg -i --pcre2 '#(?!0a0a0a|141414|262626|fafafa|8a8a8a)[0-9a-f]{6}' . --glob '!.git'   # aucune sortie
 xmllint --noout assets/*.svg assets/*/*.svg assets/m/*/*.svg                          # aucune erreur
-for m in PULSE PROJECTS EXPLORE CONTACT; do grep -c "$m:START" README.md; done         # 1 pour chacun
+for m in DOING PROJECTS UPSTREAM EXPLORE PULSE CONTACT; do grep -c "$m:START" README.md; done  # 1 pour chacun
 npm run panels && git status --short assets README.md                                  # relancer ne change plus rien
 ```
 

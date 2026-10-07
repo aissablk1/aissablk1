@@ -17,6 +17,10 @@ export const M = 'font-family="monospace"';
 export const esc = (s) =>
   String(s).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
 
+// Icônes dessinées à la main (grille 24) pour ce qui n'est pas une marque.
+export const MAIL = `<rect x="2.5" y="5.5" width="19" height="13" fill="none" stroke="${INK}" stroke-width="1.5"/><polyline points="3,6 12,13 21,6" fill="none" stroke="${INK}" stroke-width="1.5"/>`;
+export const GLOBE = `<circle cx="12" cy="12" r="9.5" fill="none" stroke="${INK}" stroke-width="1.5"/><ellipse cx="12" cy="12" rx="4" ry="9.5" fill="none" stroke="${INK}" stroke-width="1.5"/><line x1="2.5" y1="12" x2="21.5" y2="12" stroke="${INK}" stroke-width="1.5"/>`;
+
 // Retour à la ligne par estimation de chasse (Arial ~0,53 em, gras ~0,6 em, monospace ~0,6 em + letter-spacing).
 export const wrap = (text, maxChars, sep = " ") => {
   const lines = [];
@@ -43,8 +47,8 @@ export const offset = (i) => (i % 2 === 0 ? 0 : GUTTER / 2); // décalage du cad
 export const cellW = (W) => W - GUTTER / 2; // largeur du cadre dans une moitié
 
 // Un élément de grille pour le README : <picture> (variante mobile sous 600 px), cliquable si href.
-export const cell = ({ href, desktop, mobile, alt }) => {
-  const pic = `<picture><source media="(max-width: 600px)" srcset="${mobile}"><img src="${desktop}" width="50%" alt="${esc(alt)}"></picture>`;
+export const cell = ({ href, desktop, mobile, alt, width = "50%" }) => {
+  const pic = `<picture><source media="(max-width: 600px)" srcset="${mobile}"><img src="${desktop}" width="${width}" alt="${esc(alt)}"></picture>`;
   return href ? `<a href="${href}">${pic}</a>` : pic;
 };
 // Une rangée = deux éléments collés (sans espace, sinon 50 % + espace + 50 % passe à la ligne).

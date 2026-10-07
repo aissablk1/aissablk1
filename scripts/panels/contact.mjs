@@ -1,7 +1,7 @@
 // Bloc « Me parler » : panneau citation (desktop 880) + boutons cliquables en grille proportionnelle
 // (assets/contact/*.svg desktop 440 × 64, assets/m/contact/*.svg mobile 180 × 48) + bloc CONTACT du README.
 import { writeFile, mkdir } from "node:fs/promises";
-import { ASSETS, BG, LINE, INK, MUTED, F, M, esc, icon, HALF, HALF_M, offset, cellW, cell, rows, inject } from "./tokens.mjs";
+import { ASSETS, BG, LINE, INK, MUTED, F, M, esc, icon, MAIL, GLOBE, HALF, HALF_M, offset, cellW, cell, rows, inject } from "./tokens.mjs";
 
 await writeFile(`${ASSETS}/contact.svg`, `<svg xmlns="http://www.w3.org/2000/svg" width="880" height="200" viewBox="0 0 880 200" role="img" aria-label="${esc("Me parler : quelqu'un qui ne lâche jamais rien, tout en restant à l'écoute.")}">
   <rect width="880" height="200" fill="${BG}"/>
@@ -13,9 +13,6 @@ await writeFile(`${ASSETS}/contact.svg`, `<svg xmlns="http://www.w3.org/2000/svg
 </svg>
 `);
 
-// Icônes dessinées à la main (grille 24) pour ce qui n'est pas une marque.
-const MAIL = `<rect x="2.5" y="5.5" width="19" height="13" fill="none" stroke="${INK}" stroke-width="1.5"/><polyline points="3,6 12,13 21,6" fill="none" stroke="${INK}" stroke-width="1.5"/>`;
-const GLOBE = `<circle cx="12" cy="12" r="9.5" fill="none" stroke="${INK}" stroke-width="1.5"/><ellipse cx="12" cy="12" rx="4" ry="9.5" fill="none" stroke="${INK}" stroke-width="1.5"/><line x1="2.5" y1="12" x2="21.5" y2="12" stroke="${INK}" stroke-width="1.5"/>`;
 
 const tiles = [
   { file: "mail", label: "ÉCRIRE", sub: "aissabelkoussa.fr/contact", glyph: MAIL, href: "https://www.aissabelkoussa.fr/contact", alt: "Écrire : formulaire de contact" },
