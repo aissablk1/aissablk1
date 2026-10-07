@@ -44,12 +44,11 @@ Toujours pour la même raison : rendre du temps aux gens, et donner forme à ce 
 
 ### Projets en vedette
 
+<!-- PROJECTS:START -->
 <p>
-<a href="https://github.com/aissablk1/speckitlab"><img src="assets/projects/speckitlab.svg" alt="speckitlab : Spec-Driven Development pour Claude Code"></a>
-<a href="https://github.com/aissablk1/cupel"><img src="assets/projects/cupel.svg" alt="cupel : audit local des skills d'agents IA"></a>
-<a href="https://github.com/aissablk1/communikey"><img src="assets/projects/communikey.svg" alt="communikey : bus de messages chiffré pour agents de code"></a>
-<img src="assets/projects/prochain.svg" alt="Le prochain projet : bientôt">
+<a href="https://github.com/aissablk1/speckitlab"><picture><source media="(max-width: 600px)" srcset="assets/m/projects/speckitlab.svg"><img src="assets/projects/speckitlab.svg" width="50%" alt="speckitlab : Spec-Driven Development pour Claude Code."></picture></a><a href="https://github.com/aissablk1/cupel"><picture><source media="(max-width: 600px)" srcset="assets/m/projects/cupel.svg"><img src="assets/projects/cupel.svg" width="50%" alt="cupel : Audit local des skills d'agents IA."></picture></a><a href="https://github.com/aissablk1/communikey"><picture><source media="(max-width: 600px)" srcset="assets/m/projects/communikey.svg"><img src="assets/projects/communikey.svg" width="50%" alt="communikey : Bus de messages chiffré pour agents de code."></picture></a><picture><source media="(max-width: 600px)" srcset="assets/m/projects/prochain.svg"><img src="assets/projects/prochain.svg" width="50%" alt="Le prochain : En construction. Il sortira quand il sera prêt, pas avant."></picture>
 </p>
+<!-- PROJECTS:END -->
 
 ## Ce que j'explore
 
@@ -57,14 +56,7 @@ Je touche à tout, par curiosité autant que par plaisir. Pas de stack préfér�
 
 <!-- EXPLORE:START -->
 <p>
-<img src="assets/explore/langages.svg" alt="Langages : TypeScript, JavaScript, Go, Rust, Python, Luau, Swift, Shell, Ruby, Perl, HTML, CSS">
-<img src="assets/explore/agents.svg" alt="Agents et IA : Claude Code, Cursor, Codex, OpenCode, Ollama, MCP, Hermes, Tous les agents">
-<img src="assets/explore/web.svg" alt="Web : Next.js, Tailwind, Vercel, GSAP, Motion">
-<img src="assets/explore/odoo.svg" alt="Odoo : Odoo, Consultant, Maîtrise complète">
-<img src="assets/explore/infra.svg" alt="Infra et sécurité : GitHub Actions, Cloudflare, Supabase, Homebrew, Audit, Pentest">
-<img src="assets/explore/identite.svg" alt="Identité graphique : Figma, Charte graphique, Logo, Motion design">
-<img src="assets/explore/marketing.svg" alt="Marketing : SEO, Copywriting, Contenu, Acquisition">
-<img src="assets/explore/hardware.svg" alt="Hardware et radio : Meshtastic, Radio maillée longue portée">
+<picture><source media="(max-width: 600px)" srcset="assets/m/explore/row-1.svg"><img src="assets/explore/row-1.svg" width="100%" alt="Langages : TypeScript, JavaScript, Go, Rust, Python, Luau, Swift, Shell, Ruby, Perl, HTML, CSS ; Agents et IA : Claude Code, Cursor, Codex, OpenCode, Ollama, MCP, Hermes, Tous les agents"></picture><picture><source media="(max-width: 600px)" srcset="assets/m/explore/row-2.svg"><img src="assets/explore/row-2.svg" width="100%" alt="Web : Next.js, Tailwind, Vercel, GSAP, Motion ; Odoo : Odoo, Consultant, Maîtrise complète"></picture><picture><source media="(max-width: 600px)" srcset="assets/m/explore/row-3.svg"><img src="assets/explore/row-3.svg" width="100%" alt="Infra et sécurité : GitHub Actions, Cloudflare, Supabase, Homebrew, Audit, Pentest ; Identité graphique : Figma, Charte graphique, Logo, Motion design"></picture><picture><source media="(max-width: 600px)" srcset="assets/m/explore/row-4.svg"><img src="assets/explore/row-4.svg" width="100%" alt="Marketing : SEO, Copywriting, Contenu, Acquisition ; Hardware et radio : Meshtastic, Radio maillée longue portée"></picture>
 </p>
 <!-- EXPLORE:END -->
 
@@ -84,9 +76,8 @@ Je touche à tout, par curiosité autant que par plaisir. Pas de stack préfér�
 <img src="assets/contact.svg" alt="Me parler">
 </picture>
 
+<!-- CONTACT:START -->
 <p>
-<a href="https://www.aissabelkoussa.fr/contact"><img src="assets/contact/mail.svg" alt="Écrire : formulaire de contact"></a>
-<a href="https://www.aissabelkoussa.fr"><img src="assets/contact/site.svg" alt="Site : aissabelkoussa.fr"></a>
-<a href="https://www.linkedin.com/in/aissabelkoussa"><img src="assets/contact/linkedin.svg" alt="LinkedIn : in/aissabelkoussa"></a>
-<a href="https://github.com/aissablk1"><img src="assets/contact/github.svg" alt="GitHub : @aissablk1"></a>
+<a href="https://www.aissabelkoussa.fr/contact"><picture><source media="(max-width: 600px)" srcset="assets/m/contact/mail.svg"><img src="assets/contact/mail.svg" width="50%" alt="Écrire : formulaire de contact"></picture></a><a href="https://www.aissabelkoussa.fr"><picture><source media="(max-width: 600px)" srcset="assets/m/contact/site.svg"><img src="assets/contact/site.svg" width="50%" alt="Site : aissabelkoussa.fr"></picture></a><a href="https://www.linkedin.com/in/aissabelkoussa"><picture><source media="(max-width: 600px)" srcset="assets/m/contact/linkedin.svg"><img src="assets/contact/linkedin.svg" width="50%" alt="LinkedIn : in/aissabelkoussa"></picture></a><a href="https://github.com/aissablk1"><picture><source media="(max-width: 600px)" srcset="assets/m/contact/github.svg"><img src="assets/contact/github.svg" width="50%" alt="GitHub : @aissablk1"></picture></a>
 </p>
+<!-- CONTACT:END -->

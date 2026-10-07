@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="192" viewBox="0 0 400 192" role="img" aria-label="INFRA &amp; SÉCURITÉ : GitHub Actions, Cloudflare, Supabase, Homebrew, Audit, Pentest">
-  <rect width="400" height="192" fill="#0A0A0A"/>
-  <rect x="0.5" y="0.5" width="399" height="191" fill="none" stroke="#262626"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="152" viewBox="0 0 880 152" role="img" aria-label="Infra et sécurité : GitHub Actions, Cloudflare, Supabase, Homebrew, Audit, Pentest ; Identité graphique : Figma, Charte graphique, Logo, Motion design">
+  <rect x="0" y="0" width="437" height="152" fill="#0A0A0A"/>
+  <rect x="0.5" y="0.5" width="436" height="151" fill="none" stroke="#262626"/>
   <text x="24" y="36" font-family="monospace" font-size="11" letter-spacing="3" fill="#8A8A8A">INFRA &amp; SÉCURITÉ</text>
-  <text x="376" y="36" text-anchor="end" font-family="monospace" font-size="11" fill="#8A8A8A">06</text>
+  <text x="413" y="36" text-anchor="end" font-family="monospace" font-size="11" fill="#8A8A8A">06</text>
   <rect x="24.5" y="56.5" width="149" height="31" fill="#141414" stroke="#262626"/>
   <g transform="translate(36 65) scale(0.5833)"><path fill="#FAFAFA" d="M10.984 13.836a.5.5 0 0 1-.353-.146l-.745-.743a.5.5 0 1 1 .706-.708l.392.391 1.181-1.18a.5.5 0 0 1 .708.707l-1.535 1.533a.504.504 0 0 1-.354.146zm9.353-.147l1.534-1.532a.5.5 0 0 0-.707-.707l-1.181 1.18-.392-.391a.5.5 0 1 0-.706.708l.746.743a.497.497 0 0 0 .706-.001zM4.527 7.452l2.557-1.585A1 1 0 0 0 7.09 4.17L4.533 2.56A1 1 0 0 0 3 3.406v3.196a1.001 1.001 0 0 0 1.527.85zm2.03-2.436L4 6.602V3.406l2.557 1.61zM24 12.5c0 1.93-1.57 3.5-3.5 3.5a3.503 3.503 0 0 1-3.46-3h-2.08a3.503 3.503 0 0 1-3.46 3 3.502 3.502 0 0 1-3.46-3h-.558c-.972 0-1.85-.399-2.482-1.042V17c0 1.654 1.346 3 3 3h.04c.244-1.693 1.7-3 3.46-3 1.93 0 3.5 1.57 3.5 3.5S13.43 24 11.5 24a3.502 3.502 0 0 1-3.46-3H8c-2.206 0-4-1.794-4-4V9.899A5.008 5.008 0 0 1 0 5c0-2.757 2.243-5 5-5s5 2.243 5 5a5.005 5.005 0 0 1-4.952 4.998A2.482 2.482 0 0 0 7.482 12h.558c.244-1.693 1.7-3 3.46-3a3.502 3.502 0 0 1 3.46 3h2.08a3.503 3.503 0 0 1 3.46-3c1.93 0 3.5 1.57 3.5 3.5zm-15 8c0 1.378 1.122 2.5 2.5 2.5s2.5-1.122 2.5-2.5-1.122-2.5-2.5-2.5S9 19.122 9 20.5zM5 9c2.206 0 4-1.794 4-4S7.206 1 5 1 1 2.794 1 5s1.794 4 4 4zm9 3.5c0-1.378-1.122-2.5-2.5-2.5S9 11.122 9 12.5s1.122 2.5 2.5 2.5 2.5-1.122 2.5-2.5zm9 0c0-1.378-1.122-2.5-2.5-2.5S18 11.122 18 12.5s1.122 2.5 2.5 2.5 2.5-1.122 2.5-2.5zm-13 8a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0zm12 0c0 1.93-1.57 3.5-3.5 3.5a3.503 3.503 0 0 1-3.46-3.002c-.007.001-.013.005-.021.005l-.506.017h-.017a.5.5 0 0 1-.016-.999l.506-.017c.018-.002.035.006.052.007A3.503 3.503 0 0 1 20.5 17c1.93 0 3.5 1.57 3.5 3.5zm-1 0c0-1.378-1.122-2.5-2.5-2.5S18 19.122 18 20.5s1.122 2.5 2.5 2.5 2.5-1.122 2.5-2.5z"/></g>
   <text x="58" y="76" font-family="monospace" font-size="12" fill="#FAFAFA">GitHub Actions</text>
@@ -17,6 +17,19 @@
   <text x="172" y="116" font-family="monospace" font-size="12" fill="#FAFAFA">Homebrew</text>
   <rect x="252.5" y="96.5" width="60" height="31" fill="#141414" stroke="#262626"/>
   <text x="264" y="116" font-family="monospace" font-size="12" fill="#FAFAFA">Audit</text>
-  <rect x="24.5" y="136.5" width="75" height="31" fill="#141414" stroke="#262626"/>
-  <text x="36" y="156" font-family="monospace" font-size="12" fill="#FAFAFA">Pentest</text>
+  <rect x="321.5" y="96.5" width="75" height="31" fill="#141414" stroke="#262626"/>
+  <text x="333" y="116" font-family="monospace" font-size="12" fill="#FAFAFA">Pentest</text>
+  <rect x="443" y="0" width="437" height="152" fill="#0A0A0A"/>
+  <rect x="443.5" y="0.5" width="436" height="151" fill="none" stroke="#262626"/>
+  <text x="467" y="36" font-family="monospace" font-size="11" letter-spacing="3" fill="#8A8A8A">IDENTITÉ GRAPHIQUE</text>
+  <text x="856" y="36" text-anchor="end" font-family="monospace" font-size="11" fill="#8A8A8A">04</text>
+  <rect x="467.5" y="56.5" width="82" height="31" fill="#141414" stroke="#262626"/>
+  <g transform="translate(479 65) scale(0.5833)"><path fill="#FAFAFA" d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></g>
+  <text x="501" y="76" font-family="monospace" font-size="12" fill="#FAFAFA">Figma</text>
+  <rect x="558.5" y="56.5" width="142" height="31" fill="#141414" stroke="#262626"/>
+  <text x="570" y="76" font-family="monospace" font-size="12" fill="#FAFAFA">Charte graphique</text>
+  <rect x="709.5" y="56.5" width="53" height="31" fill="#141414" stroke="#262626"/>
+  <text x="721" y="76" font-family="monospace" font-size="12" fill="#FAFAFA">Logo</text>
+  <rect x="467.5" y="96.5" width="120" height="31" fill="#141414" stroke="#262626"/>
+  <text x="479" y="116" font-family="monospace" font-size="12" fill="#FAFAFA">Motion design</text>
 </svg>

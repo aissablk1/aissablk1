@@ -1,6 +1,7 @@
-// Bloc « Me parler » : panneau citation (desktop 880) + boutons cliquables 400×64 (assets/contact/*.svg).
-import { writeFile } from "node:fs/promises";
-import { ASSETS, BG, LINE, INK, MUTED, F, M, esc, icon } from "./tokens.mjs";
+// Bloc « Me parler » : panneau citation (desktop 880) + boutons cliquables en grille proportionnelle
+// (assets/contact/*.svg desktop 440 × 64, assets/m/contact/*.svg mobile 180 × 48) + bloc CONTACT du README.
+import { writeFile, mkdir } from "node:fs/promises";
+import { ASSETS, BG, LINE, INK, MUTED, F, M, esc, icon, HALF, HALF_M, offset, cellW, cell, rows, inject } from "./tokens.mjs";
 
 await writeFile(`${ASSETS}/contact.svg`, `<svg xmlns="http://www.w3.org/2000/svg" width="880" height="200" viewBox="0 0 880 200" role="img" aria-label="${esc("Me parler : quelqu'un qui ne lâche jamais rien, tout en restant à l'écoute.")}">
   <rect width="880" height="200" fill="${BG}"/>
@@ -16,22 +17,35 @@ await writeFile(`${ASSETS}/contact.svg`, `<svg xmlns="http://www.w3.org/2000/svg
 const MAIL = `<rect x="2.5" y="5.5" width="19" height="13" fill="none" stroke="${INK}" stroke-width="1.5"/><polyline points="3,6 12,13 21,6" fill="none" stroke="${INK}" stroke-width="1.5"/>`;
 const GLOBE = `<circle cx="12" cy="12" r="9.5" fill="none" stroke="${INK}" stroke-width="1.5"/><ellipse cx="12" cy="12" rx="4" ry="9.5" fill="none" stroke="${INK}" stroke-width="1.5"/><line x1="2.5" y1="12" x2="21.5" y2="12" stroke="${INK}" stroke-width="1.5"/>`;
 
-const W = 400, H = 64;
 const tiles = [
-  ["mail", "ÉCRIRE", "aissabelkoussa.fr/contact", MAIL],
-  ["site", "SITE", "aissabelkoussa.fr", GLOBE],
-  ["linkedin", "LINKEDIN", "linkedin.com/in/aissabelkoussa", await icon("linkedin@10.4.0")],
-  ["github", "GITHUB", "github.com/aissablk1", await icon("github")],
+  { file: "mail", label: "ÉCRIRE", sub: "aissabelkoussa.fr/contact", glyph: MAIL, href: "https://www.aissabelkoussa.fr/contact", alt: "Écrire : formulaire de contact" },
+  { file: "site", label: "SITE", sub: "aissabelkoussa.fr", glyph: GLOBE, href: "https://www.aissabelkoussa.fr", alt: "Site : aissabelkoussa.fr" },
+  { file: "linkedin", label: "LINKEDIN", sub: "linkedin.com/in/aissabelkoussa", glyph: await icon("linkedin@10.4.0"), href: "https://www.linkedin.com/in/aissabelkoussa", alt: "LinkedIn : in/aissabelkoussa" },
+  { file: "github", label: "GITHUB", sub: "github.com/aissablk1", glyph: await icon("github"), href: "https://github.com/aissablk1", alt: "GitHub : @aissablk1" },
 ];
-for (const [file, label, sub, glyph] of tiles) {
-  await writeFile(`${ASSETS}/contact/${file}.svg`, `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(`${label} : ${sub}`)}">
-  <rect width="${W}" height="${H}" fill="${BG}"/>
-  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" fill="none" stroke="${LINE}"/>
-  <g transform="translate(24 22) scale(0.8333)">${glyph}</g>
-  <text x="60" y="30" ${M} font-size="12" letter-spacing="2" fill="${INK}">${esc(label)}</text>
-  <text x="60" y="46" ${M} font-size="10" fill="${MUTED}">${esc(sub)}</text>
-  <text x="${W - 24}" y="37" text-anchor="end" ${M} font-size="14" fill="${MUTED}">↗</text>
-</svg>
-`);
+
+const tile = (W, H, i, t, body) => {
+  const x0 = offset(i), cw = cellW(W);
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(`${t.label} : ${t.sub}`)}">
+  <rect x="${x0}" width="${cw}" height="${H}" fill="${BG}"/>
+  <rect x="${x0 + 0.5}" y="0.5" width="${cw - 1}" height="${H - 1}" fill="none" stroke="${LINE}"/>
+${body(x0, cw)}</svg>
+`;
+};
+
+await mkdir(`${ASSETS}/m/contact`, { recursive: true });
+for (const [i, t] of tiles.entries()) {
+  // Desktop 440 × 64 : icône, libellé, adresse complète.
+  await writeFile(`${ASSETS}/contact/${t.file}.svg`, tile(HALF, 64, i, t, (x0, cw) => `  <g transform="translate(${x0 + 24} 22) scale(0.8333)">${t.glyph}</g>
+  <text x="${x0 + 60}" y="30" ${M} font-size="12" letter-spacing="2" fill="${INK}">${esc(t.label)}</text>
+  <text x="${x0 + 60}" y="46" ${M} font-size="10" fill="${MUTED}">${esc(t.sub)}</text>
+  <text x="${x0 + cw - 24}" y="37" text-anchor="end" ${M} font-size="14" fill="${MUTED}">↗</text>
+`));
+  // Mobile 180 × 48 : icône et libellé seulement (l'adresse ne tient pas à ~171 px ; le lien reste actif).
+  await writeFile(`${ASSETS}/m/contact/${t.file}.svg`, tile(HALF_M, 48, i, t, (x0, cw) => `  <g transform="translate(${x0 + 14} 16) scale(0.6667)">${t.glyph}</g>
+  <text x="${x0 + 40}" y="28" ${M} font-size="10" letter-spacing="1" fill="${INK}">${esc(t.label)}</text>
+  <text x="${x0 + cw - 12}" y="28" text-anchor="end" ${M} font-size="12" fill="${MUTED}">↗</text>
+`));
 }
-console.log(`[panels] contact.svg + contact/*.svg (${tiles.length})`);
+await inject("CONTACT", rows(tiles.map((t) => cell({ href: t.href, desktop: `assets/contact/${t.file}.svg`, mobile: `assets/m/contact/${t.file}.svg`, alt: t.alt }))));
+console.log(`[panels] contact.svg + contact (${tiles.length}) + README`);

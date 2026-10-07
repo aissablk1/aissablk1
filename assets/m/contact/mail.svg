@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48" role="img" aria-label="ÉCRIRE : aissabelkoussa.fr/contact">
+  <rect x="0" width="177" height="48" fill="#0A0A0A"/>
+  <rect x="0.5" y="0.5" width="176" height="47" fill="none" stroke="#262626"/>
+  <g transform="translate(14 16) scale(0.6667)"><rect x="2.5" y="5.5" width="19" height="13" fill="none" stroke="#FAFAFA" stroke-width="1.5"/><polyline points="3,6 12,13 21,6" fill="none" stroke="#FAFAFA" stroke-width="1.5"/></g>
+  <text x="40" y="28" font-family="monospace" font-size="10" letter-spacing="1" fill="#FAFAFA">ÉCRIRE</text>
+  <text x="165" y="28" text-anchor="end" font-family="monospace" font-size="12" fill="#8A8A8A">↗</text>
+</svg>

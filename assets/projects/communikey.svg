@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="184" viewBox="0 0 400 184" role="img" aria-label="communikey : Bus de messages chiffré pour agents de code.">
-  <rect width="400" height="184" fill="#0A0A0A"/>
-  <rect x="0.5" y="0.5" width="399" height="183" fill="none" stroke="#262626"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="184" viewBox="0 0 440 184" role="img" aria-label="communikey : Bus de messages chiffré pour agents de code.">
+  <rect x="0" width="437" height="184" fill="#0A0A0A"/>
+  <rect x="0.5" y="0.5" width="436" height="183" fill="none" stroke="#262626"/>
   <text x="24" y="40" font-family="monospace" font-size="11" letter-spacing="3" fill="#8A8A8A">03 / 04</text>
-  <text x="376" y="40" text-anchor="end" font-family="monospace" font-size="14" fill="#8A8A8A">↗</text>
+  <text x="413" y="40" text-anchor="end" font-family="monospace" font-size="14" fill="#8A8A8A">↗</text>
   <text x="24" y="88" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#FAFAFA">communikey</text>
   <text x="24" y="116" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8A8A8A">Bus de messages chiffré pour agents de code.</text>
-  <line x1="24" y1="140.5" x2="376" y2="140.5" stroke="#262626"/>
+  <line x1="24" y1="140.5" x2="413" y2="140.5" stroke="#262626"/>
   <text x="24" y="164" font-family="monospace" font-size="11" letter-spacing="2" fill="#8A8A8A">GO · CHIFFREMENT</text>
 </svg>

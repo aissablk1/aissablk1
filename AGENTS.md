@@ -16,14 +16,14 @@ Dépôt de profil GitHub de **Aïssa BELKOUSSA** (`aissablk1/aissablk1`) : GitHu
 ## Structure
 
 ```
-README.md                      Page affichée par GitHub (marqueurs PULSE et EXPLORE gérés par scripts)
+README.md                      Page affichée par GitHub (blocs PULSE, PROJECTS, EXPLORE, CONTACT injectés par scripts)
 assets/hero.svg, story.svg,    Grands panneaux desktop 880 px, ÉCRITS À LA MAIN
   process.svg
 assets/doing.svg, contact.svg  Grands panneaux desktop 880 px, GÉNÉRÉS
-assets/projects/*.svg          Cartes projets 400 px, GÉNÉRÉES
-assets/explore/*.svg           Panneaux « Ce que j'explore » 400 px, GÉNÉRÉS
-assets/contact/*.svg           Boutons de contact 400×64, GÉNÉRÉS
-assets/m/*.svg                 Variantes mobiles 360 px des grands panneaux, GÉNÉRÉES
+assets/explore/row-N.svg       Rangées « Ce que j'explore » 880 px (deux panneaux par SVG), GÉNÉRÉES
+assets/projects/*.svg          Cartes projets, demi-grille 440 px, GÉNÉRÉES
+assets/contact/*.svg           Boutons de contact, demi-grille 440 × 64, GÉNÉRÉS
+assets/m/**                    Variantes mobiles de tout ce qui précède, GÉNÉRÉES
 assets/pulse.svg, m/pulse.svg  Statistiques GitHub, GÉNÉRÉES chaque jour par la CI
 scripts/panels/                Générateurs (un fichier par élément, jetons partagés dans tokens.mjs)
 scripts/generate-pulse.mjs     Générateur des statistiques (API GraphQL GitHub)
@@ -34,7 +34,7 @@ scripts/generate-pulse.mjs     Générateur des statistiques (API GraphQL GitHub
 ## Commandes
 
 ```bash
-npm run panels                 # régénère tous les SVG GÉNÉRÉS + le bloc EXPLORE du README
+npm run panels                 # régénère tous les SVG GÉNÉRÉS + les blocs PROJECTS, EXPLORE, CONTACT du README
 GITHUB_TOKEN=… npm run pulse   # régénère pulse.svg et m/pulse.svg
 ```
 
@@ -46,12 +46,11 @@ restaure `assets/pulse.svg` et `assets/m/pulse.svg`, la CI les régénère avec 
 - **Un texte d'un panneau généré** : modifie le générateur dans `scripts/panels/`, puis `npm run panels`.
   Ne modifie jamais un SVG généré à la main : la CI l'écraserait.
 - **Un texte de hero, story ou process** : modifie le SVG desktop **et** sa version mobile dans `scripts/panels/mobile.mjs`.
-- **Une carte projet** : édite `cards` dans `scripts/panels/projects.mjs` et le bloc `<a><img></a>` correspondant dans le README.
-  Uniquement des dépôts **publics** et existants : vérifie avec `curl -s https://api.github.com/repos/aissablk1/<nom>`
+- **Une carte projet** : édite `cards` dans `scripts/panels/projects.mjs` (le README suit automatiquement).
+  Garde un nombre pair d'éléments pour remplir les rangées. Uniquement des dépôts **publics** et existants : vérifie avec `curl -s https://api.github.com/repos/aissablk1/<nom>`
   (HTTP 200 et `"private": false`).
 - **Une catégorie ou une étiquette « explore »** : édite `cats` dans `scripts/panels/explore.mjs`. Le README est mis à jour
-  automatiquement entre `<!-- EXPLORE:START -->` et `<!-- EXPLORE:END -->`.
-  Règle : une marque a son logo Simple Icons, un savoir-faire reste en texte.
+  automatiquement. Les catégories sont groupées par deux dans l'ordre de la liste. Règle : une marque a son logo Simple Icons, un savoir-faire reste en texte.
 - **Un logo** : la fonction `icon()` de `tokens.mjs` utilise Simple Icons (CC0) à la version épinglée `16.34.0`.
   Si une marque a été retirée de cette version, épingle une version plus ancienne (`"linkedin@10.4.0"`, `"openai@13.0.0"`).
   Vérifie l'existence avec `curl -sL -o /dev/null -w "%{http_code}" https://unpkg.com/simple-icons@<version>/icons/<slug>.svg`.
@@ -62,14 +61,21 @@ restaure `assets/pulse.svg` et `assets/m/pulse.svg`, la CI les régénère avec 
 
 1. **Palette fermée, 5 couleurs, aucune autre** : `#0A0A0A` fond · `#141414` surface · `#262626` filets ·
    `#FAFAFA` texte · `#8A8A8A` texte secondaire. Pas de dégradé, d'ombre ni de coins arrondis.
-2. **SVG** : fond opaque `#0A0A0A`, `viewBox` + `role="img"` + `aria-label`, polices **système** uniquement
+2. **SVG** : fond opaque `#0A0A0A` sur la surface des panneaux (seules les gouttières restent transparentes), `viewBox` + `role="img"` + `aria-label`, polices **système** uniquement
    (`Arial, Helvetica, sans-serif` et `monospace` : un SVG affiché via `<img>` ne charge aucune webfont),
    aucun script, aucune animation, filets de 1 px posés sur des demi-pixels (`x="0.5"`).
-3. **Grille** : grands panneaux 880 px (marge 40) ; cartes et panneaux en 400 px (marge 24) ; mobile 360 px (marge 20).
-4. **Responsive** : les images de 400 px n'ont **pas** d'attribut `width` dans le README (elles se placent à deux par ligne
-   sur desktop, une par ligne sur mobile). Les grands panneaux passent par `<picture>` avec le point de rupture `600px`.
-5. **Marqueurs** : `<!-- PULSE:START/END -->` et `<!-- EXPLORE:START/END -->` présents **une fois chacun**.
-   Ne modifie pas leur contenu à la main.
+3. **Grille proportionnelle** (voir `tokens.mjs`). GitHub réduit tout SVG à la largeur de sa colonne (~845 px) mais
+   n'agrandit jamais : une largeur fixe plus petite que la colonne laisse un vide à droite. Donc :
+   - tout ce qui occupe une rangée entière fait **880** de large (y compris une paire sans lien : `explore/row-N.svg`) ;
+   - un élément cliquable par paire fait **440** (demi-grille), avec `width="50%"` dans le README et **aucun espace**
+     entre les balises de la rangée (50 % + 50 % = 100 %) ; la gouttière de 6 unités est dessinée dans le SVG,
+     transparente, 3 de chaque côté intérieur (`offset()`, `cellW()`).
+   - Mobile (sous 600 px, via `<picture>`) : 360 de large pour une rangée entière, 180 pour une demi-grille.
+   - Marges intérieures : 40 (880), 24 (440), 20 (360), 12 (180).
+4. **Responsive** : tout passe par `<picture><source media="(max-width: 600px)" srcset="assets/m/…">`. Utilise les
+   fonctions `cell()` et `rows()` de `tokens.mjs`, qui écrivent le bon balisage.
+5. **Marqueurs** : `PULSE`, `PROJECTS`, `EXPLORE`, `CONTACT` (`<!-- NOM:START -->` / `<!-- NOM:END -->`) présents
+   **une fois chacun**. Ne modifie pas leur contenu à la main : il est réécrit par les générateurs.
 6. **Texte** : tout texte doit tenir dans la marge. Le retour à la ligne des générateurs est une estimation :
    vérifie le rendu (voir ci-dessous).
 7. **Chaque élément cliquable** est un SVG séparé entouré de `<a href>` dans le README (un lien dans un SVG affiché via
@@ -79,8 +85,8 @@ restaure `assets/pulse.svg` et `assets/m/pulse.svg`, la CI les régénère avec 
 
 ```bash
 rg -i --pcre2 '#(?!0a0a0a|141414|262626|fafafa|8a8a8a)[0-9a-f]{6}' . --glob '!.git'   # aucune sortie
-xmllint --noout assets/*.svg assets/*/*.svg                                            # aucune erreur
-grep -c "PULSE:START" README.md; grep -c "EXPLORE:START" README.md                     # 1 et 1
+xmllint --noout assets/*.svg assets/*/*.svg assets/m/*/*.svg                          # aucune erreur
+for m in PULSE PROJECTS EXPLORE CONTACT; do grep -c "$m:START" README.md; done         # 1 pour chacun
 npm run panels && git status --short assets README.md                                  # relancer ne change plus rien
 ```
 

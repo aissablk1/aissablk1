@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="153" viewBox="0 0 180 153" role="img" aria-label="speckitlab : Spec-Driven Development pour Claude Code.">
+  <rect x="0" width="177" height="153" fill="#0A0A0A"/>
+  <rect x="0.5" y="0.5" width="176" height="152" fill="none" stroke="#262626"/>
+  <text x="12" y="26" font-family="monospace" font-size="9" letter-spacing="2" fill="#8A8A8A">01 / 04</text>
+  <text x="165" y="26" text-anchor="end" font-family="monospace" font-size="12" fill="#8A8A8A">↗</text>
+  <text x="12" y="54" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#FAFAFA">speckitlab</text>
+  <text x="12" y="72" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8A8A8A">Spec-Driven Development</text>
+  <text x="12" y="87" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8A8A8A">pour Claude Code.</text>
+  <line x1="12" y1="103.5" x2="165" y2="103.5" stroke="#262626"/>
+  <text x="12" y="125" font-family="monospace" font-size="9" letter-spacing="1" fill="#8A8A8A">TYPESCRIPT</text>
+  <text x="12" y="139" font-family="monospace" font-size="9" letter-spacing="1" fill="#8A8A8A">CLAUDE CODE</text>
+</svg>
