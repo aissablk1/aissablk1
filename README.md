@@ -55,6 +55,7 @@ Toujours pour la même raison : rendre du temps aux gens, et donner forme à ce 
 
 Je touche à tout, par curiosité autant que par plaisir. Pas de stack préférée — j'aime créer, point.
 
+<!-- EXPLORE:START -->
 <p>
 <img src="assets/explore/langages.svg" alt="Langages : TypeScript, JavaScript, Go, Rust, Python, Luau, Swift, Shell, Ruby, Perl, HTML, CSS">
 <img src="assets/explore/agents.svg" alt="Agents et IA : Claude Code, Cursor, Codex, OpenCode, Ollama, MCP, Hermes, Tous les agents">
@@ -65,6 +66,7 @@ Je touche à tout, par curiosité autant que par plaisir. Pas de stack préfér�
 <img src="assets/explore/marketing.svg" alt="Marketing : SEO, Copywriting, Contenu, Acquisition">
 <img src="assets/explore/hardware.svg" alt="Hardware et radio : Meshtastic, Radio maillée longue portée">
 </p>
+<!-- EXPLORE:END -->
 
 <!-- PULSE:START -->
 <picture>

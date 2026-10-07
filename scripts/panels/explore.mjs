@@ -1,7 +1,8 @@
 // « Ce que j'explore » : un panneau par catégorie (assets/explore/*.svg).
 // Largeur intrinsèque 400 : deux panneaux côte à côte sur desktop, empilés sur mobile (img max-width:100%).
-// Le bloc <p><img …></p> pour le README est imprimé sur stdout avec --markdown.
-import { writeFile, mkdir } from "node:fs/promises";
+// Le bloc <p><img …></p> est réinjecté dans le README entre les marqueurs EXPLORE.
+import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { join } from "node:path";
 import { ASSETS, BG, SURF, LINE, INK, MUTED, M, esc, icon } from "./tokens.mjs";
 
 const W = 400, PAD = 24, CH = 32, GAP = 8, CHAR = 7.4, TOP = 56;
@@ -61,7 +62,11 @@ ${body}</svg>
 }
 console.log(`[panels] explore/*.svg (${panels.length})`);
 
-if (process.argv.includes("--markdown")) {
-  const imgs = panels.map((p) => `<img src="assets/explore/${p.file}.svg" alt="${esc(`${p.alt} : ${p.chips.map(([n]) => n).join(", ")}`)}">`);
-  console.log(`<p>\n${imgs.join("\n")}\n</p>`);
-}
+// 3) Injection idempotente du bloc dans le README : ajouter ou retirer une catégorie ci-dessus suffit.
+const README = join(ASSETS, "..", "README.md");
+const re = /(<!-- EXPLORE:START -->)[\s\S]*?(<!-- EXPLORE:END -->)/;
+const readme = await readFile(README, "utf8");
+if (!re.test(readme)) throw new Error("Marqueurs <!-- EXPLORE:START --> / <!-- EXPLORE:END --> absents de README.md");
+const imgs = panels.map((p) => `<img src="assets/explore/${p.file}.svg" alt="${esc(`${p.alt} : ${p.chips.map(([n]) => n).join(", ")}`)}">`);
+await writeFile(README, readme.replace(re, () => `<!-- EXPLORE:START -->\n<p>\n${imgs.join("\n")}\n</p>\n<!-- EXPLORE:END -->`));
+console.log("[panels] README.md (bloc explore)");
