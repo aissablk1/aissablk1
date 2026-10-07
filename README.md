@@ -65,8 +65,8 @@ Je touche à tout, par curiosité autant que par plaisir. Pas de stack préfér�
 ![Me parler](assets/contact.svg)
 
 <p>
-<a href="https://www.aissabelkoussa.fr/contact"><img src="assets/contact/mail.svg" width="24%" alt="Écrire : formulaire de contact"></a>
-<a href="https://www.aissabelkoussa.fr"><img src="assets/contact/site.svg" width="24%" alt="Site : aissabelkoussa.fr"></a>
-<a href="https://www.linkedin.com/in/aissabelkoussa"><img src="assets/contact/linkedin.svg" width="24%" alt="LinkedIn : in/aissabelkoussa"></a>
-<a href="https://github.com/aissablk1"><img src="assets/contact/github.svg" width="24%" alt="GitHub : @aissablk1"></a>
+<a href="https://www.aissabelkoussa.fr/contact"><img src="assets/contact/mail.svg" alt="Écrire : formulaire de contact"></a>
+<a href="https://www.aissabelkoussa.fr"><img src="assets/contact/site.svg" alt="Site : aissabelkoussa.fr"></a>
+<a href="https://www.linkedin.com/in/aissabelkoussa"><img src="assets/contact/linkedin.svg" alt="LinkedIn : in/aissabelkoussa"></a>
+<a href="https://github.com/aissablk1"><img src="assets/contact/github.svg" alt="GitHub : @aissablk1"></a>
 </p>
