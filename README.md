@@ -1,6 +1,6 @@
 ![Aïssa BELKOUSSA](assets/hero.svg)
 
-`Autodidacte depuis mes 2 ans` · `Concepteur IA & full-stack créatif` · `Albi, FR` · `De A à Z`
+`Autodidacte depuis mes 2 ans` · `Concepteur IA & full-stack créatif` · `De A à Z`
 
 ![Mon histoire](assets/story.svg)
 
