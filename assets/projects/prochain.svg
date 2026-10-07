@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="184" viewBox="0 0 432 184" role="img" aria-label="Le prochain : En construction. Il sortira quand il sera prêt, pas avant.">
+  <rect width="432" height="184" fill="#0A0A0A"/>
+  <rect x="0.5" y="0.5" width="431" height="183" fill="none" stroke="#262626" stroke-dasharray="4 4"/>
+  <text x="32" y="40" font-family="monospace" font-size="11" letter-spacing="3" fill="#8A8A8A">04 / 04</text>
+  
+  <text x="32" y="88" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#8A8A8A">Le prochain</text>
+  <text x="32" y="116" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8A8A8A">En construction. Il sortira quand il sera prêt, pas avant.</text>
+  <line x1="32" y1="140.5" x2="400" y2="140.5" stroke="#262626"/>
+  <text x="32" y="164" font-family="monospace" font-size="11" letter-spacing="2" fill="#8A8A8A">BIENTÔT</text>
+</svg>

@@ -35,10 +35,13 @@ flowchart LR
 Toujours pour la même raison : rendre du temps aux gens, et donner forme à ce qui n'existait pas.
 
 ### Projets en vedette
-| | |
-| --- | --- |
-| **[speckitlab](https://github.com/aissablk1/speckitlab)**<br>Spec-Driven Development pour Claude Code.<br>`TypeScript` · `Claude Code` | **[cupel](https://github.com/aissablk1/cupel)**<br>Audit local des skills d'agents IA.<br>`Audit` · `Agents` |
-| **[communikey](https://github.com/aissablk1/communikey)**<br>Bus de messages chiffré pour agents de code.<br>`Go` · `Chiffrement` | **Le prochain**<br>En construction. Il sortira quand il sera prêt, pas avant.<br>`Bientôt` |
+
+<p>
+<a href="https://github.com/aissablk1/speckitlab"><img src="assets/projects/speckitlab.svg" width="49%" alt="speckitlab : Spec-Driven Development pour Claude Code"></a>
+<a href="https://github.com/aissablk1/cupel"><img src="assets/projects/cupel.svg" width="49%" alt="cupel : audit local des skills d'agents IA"></a>
+<a href="https://github.com/aissablk1/communikey"><img src="assets/projects/communikey.svg" width="49%" alt="communikey : bus de messages chiffré pour agents de code"></a>
+<img src="assets/projects/prochain.svg" width="49%" alt="Le prochain projet : bientôt">
+</p>
 
 ## Ce que j'explore
 
@@ -59,6 +62,11 @@ Je touche à tout, par curiosité autant que par plaisir. Pas de stack préfér�
 
 ## Me parler
 
-On me décrit comme « quelqu'un qui ne lâche jamais rien, tout en restant à l'écoute ». Une idée, un projet, une envie de créer ? C'est exactement ce que j'aime.
+![Me parler](assets/contact.svg)
 
-[Me parler](https://www.aissabelkoussa.fr/contact) · [Site](https://www.aissabelkoussa.fr) · [LinkedIn](https://www.linkedin.com/in/aissabelkoussa) · [GitHub](https://github.com/aissablk1)
+<p>
+<a href="https://www.aissabelkoussa.fr/contact"><img src="assets/contact/mail.svg" width="24%" alt="Écrire : formulaire de contact"></a>
+<a href="https://www.aissabelkoussa.fr"><img src="assets/contact/site.svg" width="24%" alt="Site : aissabelkoussa.fr"></a>
+<a href="https://www.linkedin.com/in/aissabelkoussa"><img src="assets/contact/linkedin.svg" width="24%" alt="LinkedIn : in/aissabelkoussa"></a>
+<a href="https://github.com/aissablk1"><img src="assets/contact/github.svg" width="24%" alt="GitHub : @aissablk1"></a>
+</p>
