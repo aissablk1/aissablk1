@@ -31,14 +31,14 @@ assets/upstream/*.svg          « Mergé en amont » (PR acceptées dans des pro
 scripts/panels/                Générateurs (un fichier par élément, jetons partagés dans tokens.mjs)
 scripts/generate-pulse.mjs     Générateur des statistiques (API GraphQL GitHub)
 scripts/generate-upstream.mjs  Générateur « Mergé en amont » (API GraphQL GitHub)
-.github/workflows/dashboard.yml  Pulse + panneaux, commit automatique
+.github/workflows/dashboard.yml  Pulse, « Mergé en amont » puis panneaux et thème clair, commit automatique
 .github/workflows/snake.yml      Serpent de contributions, publié sur la branche `output`
 ```
 
 ## Commandes
 
 ```bash
-npm run panels                 # régénère tous les SVG GÉNÉRÉS + les blocs PROJECTS, EXPLORE, CONTACT du README
+npm run panels                 # régénère les SVG GÉNÉRÉS, leur miroir clair (assets/l/) et les blocs DOING, PROJECTS, EXPLORE, CONTACT du README
 GITHUB_TOKEN=… npm run pulse   # régénère pulse.svg et m/pulse.svg
 GITHUB_TOKEN=… node scripts/generate-upstream.mjs   # régénère « Mergé en amont »
 ```
