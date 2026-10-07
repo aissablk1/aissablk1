@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="432" height="184" viewBox="0 0 432 184" role="img" aria-label="speckitlab : Spec-Driven Development pour Claude Code.">
-  <rect width="432" height="184" fill="#0A0A0A"/>
-  <rect x="0.5" y="0.5" width="431" height="183" fill="none" stroke="#262626"/>
-  <text x="32" y="40" font-family="monospace" font-size="11" letter-spacing="3" fill="#8A8A8A">01 / 04</text>
-  <text x="400" y="40" text-anchor="end" font-family="monospace" font-size="14" fill="#8A8A8A">↗</text>
-  <text x="32" y="88" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#FAFAFA">speckitlab</text>
-  <text x="32" y="116" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8A8A8A">Spec-Driven Development pour Claude Code.</text>
-  <line x1="32" y1="140.5" x2="400" y2="140.5" stroke="#262626"/>
-  <text x="32" y="164" font-family="monospace" font-size="11" letter-spacing="2" fill="#8A8A8A">TYPESCRIPT · CLAUDE CODE</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="184" viewBox="0 0 400 184" role="img" aria-label="speckitlab : Spec-Driven Development pour Claude Code.">
+  <rect width="400" height="184" fill="#0A0A0A"/>
+  <rect x="0.5" y="0.5" width="399" height="183" fill="none" stroke="#262626"/>
+  <text x="24" y="40" font-family="monospace" font-size="11" letter-spacing="3" fill="#8A8A8A">01 / 04</text>
+  <text x="376" y="40" text-anchor="end" font-family="monospace" font-size="14" fill="#8A8A8A">↗</text>
+  <text x="24" y="88" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#FAFAFA">speckitlab</text>
+  <text x="24" y="116" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8A8A8A">Spec-Driven Development pour Claude Code.</text>
+  <line x1="24" y1="140.5" x2="376" y2="140.5" stroke="#262626"/>
+  <text x="24" y="164" font-family="monospace" font-size="11" letter-spacing="2" fill="#8A8A8A">TYPESCRIPT · CLAUDE CODE</text>
 </svg>

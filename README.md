@@ -33,10 +33,10 @@ Toujours pour la même raison : rendre du temps aux gens, et donner forme à ce 
 ### Projets en vedette
 
 <p>
-<a href="https://github.com/aissablk1/speckitlab"><img src="assets/projects/speckitlab.svg" width="49%" alt="speckitlab : Spec-Driven Development pour Claude Code"></a>
-<a href="https://github.com/aissablk1/cupel"><img src="assets/projects/cupel.svg" width="49%" alt="cupel : audit local des skills d'agents IA"></a>
-<a href="https://github.com/aissablk1/communikey"><img src="assets/projects/communikey.svg" width="49%" alt="communikey : bus de messages chiffré pour agents de code"></a>
-<img src="assets/projects/prochain.svg" width="49%" alt="Le prochain projet : bientôt">
+<a href="https://github.com/aissablk1/speckitlab"><img src="assets/projects/speckitlab.svg" alt="speckitlab : Spec-Driven Development pour Claude Code"></a>
+<a href="https://github.com/aissablk1/cupel"><img src="assets/projects/cupel.svg" alt="cupel : audit local des skills d'agents IA"></a>
+<a href="https://github.com/aissablk1/communikey"><img src="assets/projects/communikey.svg" alt="communikey : bus de messages chiffré pour agents de code"></a>
+<img src="assets/projects/prochain.svg" alt="Le prochain projet : bientôt">
 </p>
 
 ## Ce que j'explore
