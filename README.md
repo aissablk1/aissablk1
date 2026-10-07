@@ -6,11 +6,7 @@
 
 ## Ce que je fais
 
-| Je construis | J'audite | Je co-fonde |
-| --- | --- | --- |
-| Des IA sur mesure et du code qui rend du temps aux gens. Seul, de bout en bout. | Des architectures IA pour d'autres. Challenger un système vaut autant que le bâtir. | Une plateforme citoyenne, pour que ce que je code serve au-delà de moi. |
-
-**De A à Z · Builder, pas consultant · Rien n'est impossible**
+![Je construis des IA sur mesure, j'audite des architectures IA, je co-fonde une plateforme citoyenne](assets/doing.svg)
 
 ## De A à Z
 
@@ -45,14 +41,7 @@ Toujours pour la même raison : rendre du temps aux gens, et donner forme à ce 
 
 ## Ce que j'explore
 
-Je touche à tout, par curiosité autant que par plaisir. Pas de stack préférée — j'aime créer, point.
-
-| | |
-| --- | --- |
-| **Langages** | `TypeScript` · `JavaScript` · `Go` · `Rust` · `Python` · `Luau` · `Swift` · `Shell` · `Ruby` |
-| **Agents & IA** | `Claude Code` · `Cursor` · `Codex` · `MCP` · tous les agents |
-| **Web** | `Next.js` · `Tailwind` · `Vercel` |
-| **Bout en bout** | `Charte graphique` · `Architecture` · `Déploiement` |
+![TypeScript, JavaScript, Go, Rust, Python, Luau, Swift, Shell, Ruby ; Claude Code, Cursor, Codex, MCP ; Next.js, Tailwind, Vercel ; charte graphique, architecture, déploiement](assets/explore.svg)
 
 <!-- PULSE:START -->
 ![pulse](assets/pulse.svg)
