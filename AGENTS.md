@@ -24,6 +24,7 @@ assets/explore/row-N.svg       Rangées « Ce que j'explore » 880 px (deux pann
 assets/projects/*.svg          Cartes projets, demi-grille 440 px, GÉNÉRÉES
 assets/contact/*.svg           Boutons de contact, demi-grille 440 × 64, GÉNÉRÉS
 assets/m/**                    Variantes mobiles de tout ce qui précède, GÉNÉRÉES
+assets/l/**                    Miroir en thème clair de TOUS les SVG (y compris m/), GÉNÉRÉ par light.mjs en dernier
 assets/cofonde.svg             Lien ParleCitoyen sous « Ce que je fais », GÉNÉRÉ par doing.mjs
 assets/pulse.svg, m/pulse.svg  Statistiques GitHub, GÉNÉRÉES chaque jour par la CI
 assets/upstream/*.svg          « Mergé en amont » (PR acceptées dans des projets tiers), GÉNÉRÉES chaque jour par la CI
@@ -58,13 +59,17 @@ restaure `assets/pulse.svg` et `assets/m/pulse.svg`, la CI les régénère avec 
 - **Un logo** : la fonction `icon()` de `tokens.mjs` utilise Simple Icons (CC0) à la version épinglée `16.34.0`.
   Si une marque a été retirée de cette version, épingle une version plus ancienne (`"linkedin@10.4.0"`, `"openai@13.0.0"`).
   Vérifie l'existence avec `curl -sL -o /dev/null -w "%{http_code}" https://unpkg.com/simple-icons@<version>/icons/<slug>.svg`.
-- **Un nouveau grand panneau 880 px** : ajoute aussi sa variante 360 px dans `mobile.mjs` et insère-le dans le README via
-  `<picture><source media="(max-width: 600px)" srcset="assets/m/<nom>.svg"><img src="assets/<nom>.svg" alt="…"></picture>`.
+- **Un nouveau grand panneau 880 px** : ajoute aussi sa variante 360 px dans `mobile.mjs` et insère-le dans le README
+  avec le balisage produit par `picture({ desktop, mobile, alt })` de `tokens.mjs` (4 variantes : largeur × thème).
+  La variante claire est produite automatiquement par `light.mjs` : n'écris jamais de SVG dans `assets/l/`.
 
 ## Invariants (ne jamais casser)
 
-1. **Palette fermée, 5 couleurs, aucune autre** : `#0A0A0A` fond · `#141414` surface · `#262626` filets ·
-   `#FAFAFA` texte · `#8A8A8A` texte secondaire. Pas de dégradé, d'ombre ni de coins arrondis.
+1. **Palette fermée** — on écrit **uniquement en palette sombre**, 5 couleurs : `#0A0A0A` fond · `#141414` surface ·
+   `#262626` filets · `#FAFAFA` texte · `#8A8A8A` texte secondaire. Pas de dégradé, d'ombre ni de coins arrondis.
+   Le thème clair est dérivé par `light.mjs` (table `LIGHT` de `tokens.mjs`) et ajoute 3 gris réservés à `assets/l/` :
+   `#F0F0F0` surface · `#D4D4D4` filets · `#5C5C5C` texte secondaire (6,4:1 sur `#FAFAFA`, conforme WCAG AA ;
+   `#8A8A8A` n'y ferait que 3,3:1). Ces 3 gris ne doivent apparaître nulle part ailleurs.
 2. **SVG** : fond opaque `#0A0A0A` sur la surface des panneaux (seules les gouttières restent transparentes), `viewBox` + `role="img"` + `aria-label`, polices **système** uniquement
    (`Arial, Helvetica, sans-serif` et `monospace` : un SVG affiché via `<img>` ne charge aucune webfont),
    aucun script, aucune animation, filets de 1 px posés sur des demi-pixels (`x="0.5"`).
@@ -76,23 +81,26 @@ restaure `assets/pulse.svg` et `assets/m/pulse.svg`, la CI les régénère avec 
      transparente, 3 de chaque côté intérieur (`offset()`, `cellW()`).
    - Mobile (sous 600 px, via `<picture>`) : 360 de large pour une rangée entière, 180 pour une demi-grille.
    - Marges intérieures : 40 (880), 24 (440), 20 (360), 12 (180).
-4. **Responsive** : tout passe par `<picture><source media="(max-width: 600px)" srcset="assets/m/…">`. Utilise les
-   fonctions `cell()` et `rows()` de `tokens.mjs`, qui écrivent le bon balisage.
+4. **Responsive et thèmes** : chaque image du README est un `<picture>` à 4 variantes, dans cet ordre exact :
+   mobile clair (`assets/l/m/…`), mobile (`assets/m/…`), desktop clair (`assets/l/…`), desktop (`assets/…`).
+   Utilise `picture()`, `cell()` et `rows()` de `tokens.mjs`, qui écrivent ce balisage. Le serpent (`snake.yml`) a aussi
+   ses deux versions, `snake.svg` et `snake-light.svg`, avec la même correspondance de couleurs.
 5. **Marqueurs** : `DOING`, `PROJECTS`, `UPSTREAM`, `EXPLORE`, `PULSE`, `CONTACT` (`<!-- NOM:START -->` /
    `<!-- NOM:END -->`) présents **une fois chacun**. Ne modifie pas leur contenu à la main : il est réécrit par les générateurs.
-8. **« Mergé en amont » = contributions externes uniquement.** Le filtre est l'`authorAssociation` donné par GitHub
-   (`CONTRIBUTOR`, `FIRST_TIME_CONTRIBUTOR`, `FIRST_TIMER`, `NONE`). N'ajoute jamais de PR vers les dépôts du propriétaire
-   ou de ses organisations (`OWNER`, `MEMBER`, `COLLABORATOR`), même pour gonfler la liste.
 6. **Texte** : tout texte doit tenir dans la marge. Le retour à la ligne des générateurs est une estimation :
    vérifie le rendu (voir ci-dessous).
 7. **Chaque élément cliquable** est un SVG séparé entouré de `<a href>` dans le README (un lien dans un SVG affiché via
    `<img>` ne fonctionne pas).
+8. **« Mergé en amont » = contributions externes uniquement.** Le filtre est l'`authorAssociation` donné par GitHub
+   (`CONTRIBUTOR`, `FIRST_TIME_CONTRIBUTOR`, `FIRST_TIMER`, `NONE`). N'ajoute jamais de PR vers les dépôts du propriétaire
+   ou de ses organisations (`OWNER`, `MEMBER`, `COLLABORATOR`), même pour gonfler la liste.
 
 ## Vérifications avant commit
 
 ```bash
-rg -i --pcre2 '#(?!0a0a0a|141414|262626|fafafa|8a8a8a)[0-9a-f]{6}' . --glob '!.git'   # aucune sortie
-xmllint --noout assets/*.svg assets/*/*.svg assets/m/*/*.svg                          # aucune erreur
+rg -i --pcre2 '#(?!0a0a0a|141414|262626|fafafa|8a8a8a|f0f0f0|d4d4d4|5c5c5c)[0-9a-f]{6}' . --glob '!.git'  # aucune sortie
+rg -l -i '#(f0f0f0|d4d4d4|5c5c5c)' assets --glob '!assets/l/**'                      # aucune sortie (gris clairs isolés)
+xmllint --noout $(find assets -name '*.svg')                                          # aucune erreur
 for m in DOING PROJECTS UPSTREAM EXPLORE PULSE CONTACT; do grep -c "$m:START" README.md; done  # 1 pour chacun
 npm run panels && git status --short assets README.md                                  # relancer ne change plus rien
 ```

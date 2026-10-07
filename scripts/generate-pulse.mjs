@@ -3,6 +3,7 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { picture } from "./panels/tokens.mjs";
 
 const LOGIN = "aissablk1";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -124,6 +125,6 @@ console.log(`[pulse] ${SVG_PATH} + ${SVG_MOBILE_PATH} écrits (total=${data.tota
 const re = /(<!-- PULSE:START -->)[\s\S]*?(<!-- PULSE:END -->)/;
 const readme = await readFile(README_PATH, "utf8");
 if (!re.test(readme)) throw new Error("Marqueurs <!-- PULSE:START --> / <!-- PULSE:END --> absents de README.md");
-const block = `<picture>\n<source media="(max-width: 600px)" srcset="assets/m/pulse.svg">\n<img src="assets/pulse.svg" alt="Contributions et derniers dépôts">\n</picture>`;
+const block = picture({ desktop: "assets/pulse.svg", mobile: "assets/m/pulse.svg", alt: "Contributions et derniers dépôts" });
 await writeFile(README_PATH, readme.replace(re, `$1\n${block}\n$2`));
 console.log("[pulse] README.md mis à jour.");

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="112" viewBox="0 0 880 112" role="img" aria-label="Marketing : SEO, Copywriting, Contenu, Acquisition ; Hardware et radio : Meshtastic, Radio maillée longue portée">
+  <rect x="0" y="0" width="437" height="112" fill="#FAFAFA"/>
+  <rect x="0.5" y="0.5" width="436" height="111" fill="none" stroke="#D4D4D4"/>
+  <text x="24" y="36" font-family="monospace" font-size="11" letter-spacing="3" fill="#5C5C5C">MARKETING</text>
+  <text x="413" y="36" text-anchor="end" font-family="monospace" font-size="11" fill="#5C5C5C">04</text>
+  <rect x="24.5" y="56.5" width="46" height="31" fill="#F0F0F0" stroke="#D4D4D4"/>
+  <text x="36" y="76" font-family="monospace" font-size="12" fill="#0A0A0A">SEO</text>
+  <rect x="79.5" y="56.5" width="105" height="31" fill="#F0F0F0" stroke="#D4D4D4"/>
+  <text x="91" y="76" font-family="monospace" font-size="12" fill="#0A0A0A">Copywriting</text>
+  <rect x="193.5" y="56.5" width="75" height="31" fill="#F0F0F0" stroke="#D4D4D4"/>
+  <text x="205" y="76" font-family="monospace" font-size="12" fill="#0A0A0A">Contenu</text>
+  <rect x="277.5" y="56.5" width="105" height="31" fill="#F0F0F0" stroke="#D4D4D4"/>
+  <text x="289" y="76" font-family="monospace" font-size="12" fill="#0A0A0A">Acquisition</text>
+  <rect x="443" y="0" width="437" height="112" fill="#FAFAFA"/>
+  <rect x="443.5" y="0.5" width="436" height="111" fill="none" stroke="#D4D4D4"/>
+  <text x="467" y="36" font-family="monospace" font-size="11" letter-spacing="3" fill="#5C5C5C">HARDWARE &amp; RADIO</text>
+  <text x="856" y="36" text-anchor="end" font-family="monospace" font-size="11" fill="#5C5C5C">02</text>
+  <rect x="467.5" y="56.5" width="97" height="31" fill="#F0F0F0" stroke="#D4D4D4"/>
+  <text x="479" y="76" font-family="monospace" font-size="12" fill="#0A0A0A">Meshtastic</text>
+  <rect x="573.5" y="56.5" width="223" height="31" fill="#F0F0F0" stroke="#D4D4D4"/>
+  <text x="585" y="76" font-family="monospace" font-size="12" fill="#0A0A0A">Radio maillée longue portée</text>
+</svg>

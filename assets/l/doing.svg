@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="272" viewBox="0 0 880 272" role="img" aria-label="Ce que je fais : je construis, j'audite, je co-fonde.">
+  <rect width="880" height="272" fill="#FAFAFA"/>
+  <rect x="0.5" y="0.5" width="879" height="271" fill="none" stroke="#D4D4D4"/>
+  <text x="40" y="46" font-family="monospace" font-size="11" letter-spacing="4" fill="#5C5C5C">CE QUE JE FAIS</text>
+  <text x="840" y="46" text-anchor="end" font-family="monospace" font-size="11" fill="#5C5C5C">TROIS GESTES</text>
+  <text x="40" y="88" font-family="monospace" font-size="11" letter-spacing="3" fill="#5C5C5C">01</text>
+  <text x="40" y="120" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#0A0A0A">Je construis</text>
+  <text x="40" y="150" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">Des IA sur mesure et du code</text>
+  <text x="40" y="170" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">qui rend du temps aux gens.</text>
+  <text x="40" y="190" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">Seul, de bout en bout.</text>
+  <line x1="290.5" y1="72" x2="290.5" y2="200" stroke="#D4D4D4"/>
+  <text x="315" y="88" font-family="monospace" font-size="11" letter-spacing="3" fill="#5C5C5C">02</text>
+  <text x="315" y="120" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#0A0A0A">J'audite</text>
+  <text x="315" y="150" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">Des architectures IA pour d'autres.</text>
+  <text x="315" y="170" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">Challenger un système vaut</text>
+  <text x="315" y="190" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">autant que le bâtir.</text>
+  <line x1="565.5" y1="72" x2="565.5" y2="200" stroke="#D4D4D4"/>
+  <text x="590" y="88" font-family="monospace" font-size="11" letter-spacing="3" fill="#5C5C5C">03</text>
+  <text x="590" y="120" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#0A0A0A">Je co-fonde</text>
+  <text x="590" y="150" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">ParleCitoyen, une plateforme</text>
+  <text x="590" y="170" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">citoyenne, pour que ce que je</text>
+  <text x="590" y="190" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">code serve au-delà de moi.</text>
+  <line x1="40" y1="224.5" x2="840" y2="224.5" stroke="#D4D4D4"/>
+  <text x="40" y="252" font-family="monospace" font-size="11" letter-spacing="3" fill="#0A0A0A">DE A À Z · BUILDER &amp; CONSULTANT · RIEN N'EST IMPOSSIBLE</text>
+</svg>

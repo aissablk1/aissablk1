@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="240" viewBox="0 0 880 240" role="img" aria-label="Aïssa BELKOUSSA, Concepteur de produits IA et full-stack créatif">
+  <rect width="880" height="240" fill="#FAFAFA"/>
+  <rect x="0.5" y="0.5" width="879" height="239" fill="none" stroke="#D4D4D4"/>
+  <text x="40" y="54" font-family="monospace" font-size="12" letter-spacing="4" fill="#5C5C5C">DE A À Z · CE QUI EXISTE ET CE QUI N'EXISTE PAS ENCORE</text>
+  <text x="40" y="116" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#0A0A0A">Aïssa BELKOUSSA</text>
+  <text x="40" y="150" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="500" fill="#0A0A0A">Concepteur de produits IA &amp; full-stack créatif</text>
+  <text x="40" y="186" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">Une idée se concrétise plus aisément qu'on ne le pense — de la charte au système complet.</text>
+  <line x1="40" y1="206" x2="840" y2="206" stroke="#D4D4D4"/>
+  <text x="40" y="226" font-family="monospace" font-size="11" fill="#5C5C5C">JE TRAVAILLE PARTOUT</text>
+  <text x="840" y="226" text-anchor="end" font-family="monospace" font-size="11" fill="#5C5C5C">aissabelkoussa.fr</text>
+</svg>

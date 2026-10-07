@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="56" viewBox="0 0 360 56" role="img" aria-label="Mergé en amont : 2 pull requests acceptées dans des projets tiers.">
+  <rect width="360" height="56" fill="#FAFAFA"/>
+  <rect x="0.5" y="0.5" width="359" height="55" fill="none" stroke="#D4D4D4"/>
+  <text x="20" y="34" font-family="monospace" font-size="10" letter-spacing="3" fill="#5C5C5C">MERGÉ EN AMONT</text>
+  <text x="340" y="34" text-anchor="end" font-family="monospace" font-size="10" fill="#5C5C5C">02 PR</text>
+</svg>

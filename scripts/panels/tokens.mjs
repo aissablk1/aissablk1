@@ -10,6 +10,17 @@ export const LINE = "#262626";
 export const INK = "#FAFAFA";
 export const MUTED = "#8A8A8A";
 
+// Thème clair : correspondance sombre → clair appliquée par light.mjs. Les 3 gris clairs (#5C5C5C, #D4D4D4, #F0F0F0)
+// sont réservés au thème clair : #8A8A8A sur #FAFAFA ne fait que 3,3:1, sous le seuil WCAG AA (4,5:1) ;
+// #5C5C5C y atteint 6,4:1.
+export const LIGHT = {
+  "#0A0A0A": "#FAFAFA", // fond
+  "#141414": "#F0F0F0", // surface
+  "#262626": "#D4D4D4", // filets
+  "#FAFAFA": "#0A0A0A", // texte
+  "#8A8A8A": "#5C5C5C", // texte secondaire
+};
+
 // Un SVG servi via <img> ne charge aucune webfont : uniquement des polices système.
 export const F = 'font-family="Arial, Helvetica, sans-serif"';
 export const M = 'font-family="monospace"';
@@ -46,9 +57,19 @@ export const HALF_M = 180; // mobile : moitié d'une colonne ~360 (vue à ~171 p
 export const offset = (i) => (i % 2 === 0 ? 0 : GUTTER / 2); // décalage du cadre (gauche : 0, droite : 4)
 export const cellW = (W) => W - GUTTER / 2; // largeur du cadre dans une moitié
 
-// Un élément de grille pour le README : <picture> (variante mobile sous 600 px), cliquable si href.
-export const cell = ({ href, desktop, mobile, alt, width = "50%" }) => {
-  const pic = `<picture><source media="(max-width: 600px)" srcset="${mobile}"><img src="${desktop}" width="${width}" alt="${esc(alt)}"></picture>`;
+// Une image du README en 4 variantes (largeur × thème), dans l'ordre où le navigateur les évalue :
+// mobile clair, mobile sombre, desktop clair, puis desktop sombre par défaut. Les variantes claires sont le miroir
+// assets/l/… produit par light.mjs. Vérifié sur github.com (composant themed-picture) dans les 4 combinaisons.
+const lightOf = (path) => path.replace(/^assets\//, "assets/l/");
+export const picture = ({ desktop, mobile, alt, width = "100%" }) =>
+  `<picture><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="${lightOf(mobile)}">` +
+  `<source media="(max-width: 600px)" srcset="${mobile}">` +
+  `<source media="(prefers-color-scheme: light)" srcset="${lightOf(desktop)}">` +
+  `<img src="${desktop}" width="${width}" alt="${esc(alt)}"></picture>`;
+
+// Un élément de grille (cliquable si href).
+export const cell = ({ href, width = "50%", ...rest }) => {
+  const pic = picture({ ...rest, width });
   return href ? `<a href="${href}">${pic}</a>` : pic;
 };
 // Une rangée = deux éléments collés (sans espace, sinon 50 % + espace + 50 % passe à la ligne).

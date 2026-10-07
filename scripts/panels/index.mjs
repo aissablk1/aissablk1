@@ -5,3 +5,4 @@ await import("./projects.mjs");
 await import("./explore.mjs");
 await import("./contact.mjs");
 await import("./mobile.mjs");
+await import("./light.mjs"); // toujours en dernier : décline en thème clair tout ce qui précède (et pulse/upstream en CI)

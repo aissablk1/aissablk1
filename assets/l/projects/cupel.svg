@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="184" viewBox="0 0 440 184" role="img" aria-label="cupel : Audit local des skills d'agents IA.">
+  <rect x="3" width="437" height="184" fill="#FAFAFA"/>
+  <rect x="3.5" y="0.5" width="436" height="183" fill="none" stroke="#D4D4D4"/>
+  <text x="27" y="40" font-family="monospace" font-size="11" letter-spacing="3" fill="#5C5C5C">02 / 04</text>
+  <text x="416" y="40" text-anchor="end" font-family="monospace" font-size="14" fill="#5C5C5C">↗</text>
+  <text x="27" y="88" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" fill="#0A0A0A">cupel</text>
+  <text x="27" y="116" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">Audit local des skills d'agents IA.</text>
+  <line x1="27" y1="140.5" x2="416" y2="140.5" stroke="#D4D4D4"/>
+  <text x="27" y="164" font-family="monospace" font-size="11" letter-spacing="2" fill="#5C5C5C">AUDIT · AGENTS</text>
+</svg>

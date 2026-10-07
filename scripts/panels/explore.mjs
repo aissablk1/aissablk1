@@ -2,7 +2,7 @@
 // donc réduit par GitHub exactement comme les grands panneaux ; sa variante mobile (360) empile les deux panneaux.
 // Sorties : assets/explore/row-N.svg, assets/m/explore/row-N.svg, bloc EXPLORE du README.
 import { writeFile, mkdir, readdir, unlink } from "node:fs/promises";
-import { ASSETS, BG, SURF, LINE, INK, MUTED, M, esc, icon, GUTTER, inject } from "./tokens.mjs";
+import { ASSETS, BG, SURF, LINE, INK, MUTED, M, esc, icon, GUTTER, inject, picture } from "./tokens.mjs";
 
 // [titre affiché, texte alternatif, [[étiquette, logo Simple Icons ?]]]
 // Règle : une marque a son logo ; un savoir-faire (ou un outil sans logo libre) reste du texte.
@@ -85,7 +85,7 @@ for (let r = 0; r * 2 < cats.length; r++) {
   await writeFile(`${ASSETS}/m/explore/${file}`, svg(360, y - GUTTER, label, bodyM));
 
   // Une ligne sans espace : les rangées s'enchaînent dans le même paragraphe que les cartes (même interligne).
-  md.push(`<picture><source media="(max-width: 600px)" srcset="assets/m/explore/${file}"><img src="assets/explore/${file}" width="100%" alt="${esc(label)}"></picture>`);
+  md.push(picture({ desktop: `assets/explore/${file}`, mobile: `assets/m/explore/${file}`, alt: label }));
 }
 await inject("EXPLORE", `<p>\n${md.join("")}\n</p>`);
 console.log(`[panels] explore (${md.length} rangées) + README`);

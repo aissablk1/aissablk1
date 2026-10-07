@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="268" viewBox="0 0 360 268" role="img" aria-label="Aïssa BELKOUSSA, Concepteur de produits IA et full-stack créatif">
+  <rect width="360" height="268" fill="#FAFAFA"/>
+  <rect x="0.5" y="0.5" width="359" height="267" fill="none" stroke="#D4D4D4"/>
+  <text x="20" y="40" font-family="monospace" font-size="10" letter-spacing="2" fill="#5C5C5C">DE A À Z · CE QUI EXISTE</text>
+  <text x="20" y="56" font-family="monospace" font-size="10" letter-spacing="2" fill="#5C5C5C">ET CE QUI N'EXISTE PAS ENCORE</text>
+  <text x="20" y="108" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" fill="#0A0A0A">Aïssa BELKOUSSA</text>
+  <text x="20" y="134" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#0A0A0A">Concepteur de produits IA &amp; full-stack</text>
+  <text x="20" y="156" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#0A0A0A">créatif</text>
+  <text x="20" y="185" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">Une idée se concrétise plus aisément qu'on ne</text>
+  <text x="20" y="204" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#5C5C5C">le pense — de la charte au système complet.</text>
+  <line x1="20" y1="224.5" x2="340" y2="224.5" stroke="#D4D4D4"/>
+  <text x="20" y="248" font-family="monospace" font-size="10" fill="#5C5C5C">JE TRAVAILLE PARTOUT</text>
+  <text x="340" y="248" text-anchor="end" font-family="monospace" font-size="10" fill="#5C5C5C">aissabelkoussa.fr</text>
+</svg>

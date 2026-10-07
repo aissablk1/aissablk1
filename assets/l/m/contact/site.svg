@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48" role="img" aria-label="SITE : aissabelkoussa.fr">
+  <rect x="3" width="177" height="48" fill="#FAFAFA"/>
+  <rect x="3.5" y="0.5" width="176" height="47" fill="none" stroke="#D4D4D4"/>
+  <g transform="translate(17 16) scale(0.6667)"><circle cx="12" cy="12" r="9.5" fill="none" stroke="#0A0A0A" stroke-width="1.5"/><ellipse cx="12" cy="12" rx="4" ry="9.5" fill="none" stroke="#0A0A0A" stroke-width="1.5"/><line x1="2.5" y1="12" x2="21.5" y2="12" stroke="#0A0A0A" stroke-width="1.5"/></g>
+  <text x="43" y="28" font-family="monospace" font-size="10" letter-spacing="1" fill="#0A0A0A">SITE</text>
+  <text x="168" y="28" text-anchor="end" font-family="monospace" font-size="12" fill="#5C5C5C">↗</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="56" viewBox="0 0 360 56" role="img" aria-label="PARLECITOYEN : parlecitoyen.fr · la plateforme citoyenne que je co-fonde">
+  <rect width="360" height="56" fill="#FAFAFA"/>
+  <rect x="0.5" y="0.5" width="359" height="55" fill="none" stroke="#D4D4D4"/>
+  <g transform="translate(20 18) scale(0.8333)"><circle cx="12" cy="12" r="9.5" fill="none" stroke="#0A0A0A" stroke-width="1.5"/><ellipse cx="12" cy="12" rx="4" ry="9.5" fill="none" stroke="#0A0A0A" stroke-width="1.5"/><line x1="2.5" y1="12" x2="21.5" y2="12" stroke="#0A0A0A" stroke-width="1.5"/></g>
+  <text x="52" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#0A0A0A">PARLECITOYEN</text>
+  <text x="52" y="41" font-family="monospace" font-size="9" fill="#5C5C5C">parlecitoyen.fr</text>
+  <text x="340" y="33" text-anchor="end" font-family="monospace" font-size="13" fill="#5C5C5C">↗</text>
+</svg>
