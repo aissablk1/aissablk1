@@ -41,7 +41,18 @@ Toujours pour la même raison : rendre du temps aux gens, et donner forme à ce 
 
 ## Ce que j'explore
 
-![TypeScript, JavaScript, Go, Rust, Python, Luau, Swift, Shell, Ruby ; Claude Code, Cursor, Codex, MCP ; Next.js, Tailwind, Vercel ; charte graphique, architecture, déploiement](assets/explore.svg)
+Je touche à tout, par curiosité autant que par plaisir. Pas de stack préférée — j'aime créer, point.
+
+<p>
+<img src="assets/explore/langages.svg" alt="Langages : TypeScript, JavaScript, Go, Rust, Python, Luau, Swift, Shell, Ruby, Perl, HTML, CSS">
+<img src="assets/explore/agents.svg" alt="Agents et IA : Claude Code, Cursor, Codex, OpenCode, Ollama, MCP, Hermes, Tous les agents">
+<img src="assets/explore/web.svg" alt="Web : Next.js, Tailwind, Vercel, GSAP, Motion">
+<img src="assets/explore/odoo.svg" alt="Odoo : Odoo, Consultant, Maîtrise complète">
+<img src="assets/explore/infra.svg" alt="Infra et sécurité : GitHub Actions, Cloudflare, Supabase, Homebrew, Audit, Pentest">
+<img src="assets/explore/identite.svg" alt="Identité graphique : Figma, Charte graphique, Logo, Motion design">
+<img src="assets/explore/marketing.svg" alt="Marketing : SEO, Copywriting, Contenu, Acquisition">
+<img src="assets/explore/hardware.svg" alt="Hardware et radio : Meshtastic, Radio maillée longue portée">
+</p>
 
 <!-- PULSE:START -->
 ![pulse](assets/pulse.svg)
