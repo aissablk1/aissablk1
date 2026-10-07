@@ -1,14 +1,48 @@
 ![Aïssa BELKOUSSA](assets/hero.svg)
 
-## Ce que je construis
+`Autodidacte depuis mes 2 ans` · `Concepteur IA & full-stack créatif` · `Albi, FR` · `De A à Z`
 
-Je construis tout, de A à Z — ce qui existe, ce qui peut exister, et ce qui n'existe pas encore. De la charte graphique au système complet : serveurs MCP, outils pour agents de code, produits SaaS, plateformes, jeux. Conçus, codés et déployés seul. Une idée se concrétise plus aisément qu'on ne le pense ; rien n'est impossible.
+![Mon histoire](assets/story.svg)
+
+## Ce que je fais
+
+| Je construis | J'audite | Je co-fonde |
+| --- | --- | --- |
+| Des IA sur mesure et du code qui rend du temps aux gens. Seul, de bout en bout. | Des architectures IA pour d'autres. Challenger un système vaut autant que le bâtir. | Une plateforme citoyenne, pour que ce que je code serve au-delà de moi. |
 
 **De A à Z · Builder, pas consultant · Rien n'est impossible**
 
-## Stack
+## De A à Z
 
-Pas de stack préférée — je les apprends toutes. J'aime créer, point.
+![De A à Z](assets/process.svg)
+
+## Le pipeline, en vrai
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#141414','primaryTextColor':'#FAFAFA','primaryBorderColor':'#8A8A8A','lineColor':'#8A8A8A','fontFamily':'monospace'}}}%%
+flowchart LR
+    A[idée] --> B{ça tient ?}
+    B -->|oui| C[charte]
+    C --> D[architecture]
+    D --> E[build]
+    E --> F{ça marche ?}
+    F -->|oui| G[déploiement]
+    F -->|non| E
+```
+
+## Ce que je construis
+
+Toujours pour la même raison : rendre du temps aux gens, et donner forme à ce qui n'existait pas.
+
+### Projets en vedette
+| | |
+| --- | --- |
+| **[speckitlab](https://github.com/aissablk1/speckitlab)**<br>Spec-Driven Development pour Claude Code.<br>`TypeScript` · `Claude Code` | **[cupel](https://github.com/aissablk1/cupel)**<br>Audit local des skills d'agents IA.<br>`Audit` · `Agents` |
+| **[communikey](https://github.com/aissablk1/communikey)**<br>Bus de messages chiffré pour agents de code.<br>`Go` · `Chiffrement` | **Le prochain**<br>En construction. Il sortira quand il sera prêt, pas avant.<br>`Bientôt` |
+
+## Ce que j'explore
+
+Je touche à tout, par curiosité autant que par plaisir. Pas de stack préférée — j'aime créer, point.
 
 | | |
 | --- | --- |
@@ -23,6 +57,8 @@ Pas de stack préférée — je les apprends toutes. J'aime créer, point.
 
 ![snake](https://raw.githubusercontent.com/aissablk1/aissablk1/output/snake.svg)
 
-## Contact
+## Me parler
 
-[Site](https://www.aissabelkoussa.fr) · [LinkedIn](https://www.linkedin.com/in/aissabelkoussa) · [GitHub](https://github.com/aissablk1)
+On me décrit comme « quelqu'un qui ne lâche jamais rien, tout en restant à l'écoute ». Une idée, un projet, une envie de créer ? C'est exactement ce que j'aime.
+
+[Me parler](https://www.aissabelkoussa.fr/contact) · [Site](https://www.aissabelkoussa.fr) · [LinkedIn](https://www.linkedin.com/in/aissabelkoussa) · [GitHub](https://github.com/aissablk1)
